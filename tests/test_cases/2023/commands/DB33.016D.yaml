@@ -1,9 +1,6 @@
 command_id: DB33.016D
 test_cases:
-- response: |-
-    18DAF110100D416D12000001
-    18DAF110212E000000014400
-  expected_values:
+- expected_values:
     FRP_A: 3020
     FRP_A_CMD: 0
     FRP_A_CMD_SUP: 0
@@ -16,10 +13,10 @@ test_cases:
     FRT_A_SUP: 0
     FRT_B: -40
     FRT_B_SUP: 0
-- response: |-
-    18DAF110100D416D12000002
-    18DAF1102157000000027000
-  expected_values:
+  response: |-
+    18DAF110100D416D12000001
+    18DAF110212E000000014400
+- expected_values:
     FRP_A: 5990
     FRP_A_CMD: 0
     FRP_A_CMD_SUP: 0
@@ -32,10 +29,10 @@ test_cases:
     FRT_A_SUP: 0
     FRT_B: -40
     FRT_B_SUP: 0
-- response: |-
+  response: |-
     18DAF110100D416D12000002
-    18DAF110216C000000028300
-  expected_values:
+    18DAF1102157000000027000
+- expected_values:
     FRP_A: 6200
     FRP_A_CMD: 0
     FRP_A_CMD_SUP: 0
@@ -48,10 +45,10 @@ test_cases:
     FRT_A_SUP: 0
     FRT_B: -40
     FRT_B_SUP: 0
-- response: |-
-    18DAF110100D416D12000003
-    18DAF1102165000000037800
-  expected_values:
+  response: |-
+    18DAF110100D416D12000002
+    18DAF110216C000000028300
+- expected_values:
     FRP_A: 8690
     FRP_A_CMD: 0
     FRP_A_CMD_SUP: 0
@@ -64,3 +61,6 @@ test_cases:
     FRT_A_SUP: 0
     FRT_B: -40
     FRT_B_SUP: 0
+  response: |-
+    18DAF110100D416D12000003
+    18DAF1102165000000037800

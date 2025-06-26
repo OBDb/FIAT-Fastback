@@ -1,37 +1,42 @@
 command_id: DB33.0142
 test_cases:
-- response: 18DAF110044142324E
-  expected_values:
-    VPWR: 12.878
-- response: 18DAF1100441423900
-  expected_values:
+- expected_values:
+    VPWR: 12.198
+  response: 18DAF1100441422FA6
+- expected_values:
+    VPWR: 12.301
+  response: |-
+    18DAF110044142307F
+    18DAF118044142300D
+- expected_values:
     VPWR: 14.592
-- response: |-
+  response: 18DAF1100441423900
+- expected_values:
+    VPWR: 14.32
+  response: |-
     18DAF1100441423900
     18DAF11804414237F0
-  expected_values:
-    VPWR: 14.32
-- response: 18DAF1100441423A06
-  expected_values:
+- expected_values:
     VPWR: 14.854
-- response: |-
+  response: 18DAF1100441423A06
+- expected_values:
+    VPWR: 14.435
+  response: |-
+    18DAF1100441423A06
+    18DAF1180441423863
+- expected_values:
+    VPWR: 12.075
+  response: |-
     18DAF1180441422E94
     18DAF1100441422F2B
-  expected_values:
-    VPWR: 12.075
-- response: |-
-    18DAF1180441423048
-    18DAF11004414230EB
-  expected_values:
-    VPWR: 12.523
-- response: 18DAF11804414237D5
-  expected_values:
-    VPWR: 14.293
-- response: 18DAF11804414238FF
-  expected_values:
+- expected_values:
+    VPWR: 11.941
+  response: 18DAF1180441422EA5
+- expected_values:
     VPWR: 14.591
-- response: |-
+  response: 18DAF11804414238FF
+- expected_values:
+    VPWR: 14.669
+  response: |-
     18DAF11804414238FF
     18DAF110044142394D
-  expected_values:
-    VPWR: 14.669
