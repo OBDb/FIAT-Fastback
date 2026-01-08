@@ -4,5 +4,8 @@ test_cases:
     ALCH_PCT: 27.84314
   response: 18DAF11003415247
 - expected_values:
+    ALCH_PCT: 30.98039
+  response: 18DAF1100341524F
+- expected_values:
     ALCH_PCT: 31.37255
   response: 18DAF11003415250
