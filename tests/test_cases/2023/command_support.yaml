@@ -93,9 +93,9 @@ unsupported_commands_by_ecu:
   "6B4":
   - 6B4.694.22D410:Fiat_HVBAT_SOC
   "740":
-  - 740.4C0.22A0A1|fc=1:Fiat_TPAC_FL,Fiat_TP_FL_AC,Fiat_TP_FR_AC,Fiat_TP_RL_AC,Fiat_TP_RR_AC
+  - 740.4C0.22A0A1|fc=1:Fiat_TP_FL_AC,Fiat_TP_FR_AC,Fiat_TP_RL_AC,Fiat_TP_RR_AC
   - 740.4C0.22A0A5|fc=1:Fiat_TP_FL_VALID,Fiat_TP_FR_VALID,Fiat_TP_RL_VALID,Fiat_TP_RR_VALID
-  - 740.4C0.22A0F1|fc=1:Fiat_TP_FL_740,Fiat_TP_FL_V2,Fiat_TT_FL_V2
+  - 740.4C0.22A0F1|fc=1:Fiat_TP_FL_V2,Fiat_TT_FL_V2
   - 740.4C0.22A0F2|fc=1:Fiat_TP_FR_V2,Fiat_TT_FR_V2
   - 740.4C0.22A0F3|fc=1:Fiat_TP_RR_V2,Fiat_TT_RR_V2
   - 740.4C0.22A0F4|fc=1:Fiat_TP_RL_V2,Fiat_TT_RL_V2
@@ -107,14 +107,14 @@ unsupported_commands_by_ecu:
   "7AB":
   - 7AB.52B.222802|fc=1:Fiat_GPS_HEADING,Fiat_GPS_SATS_TRACKED,Fiat_GPS_SATS_VISIBLE
   "7DA":
-  - 7DA.22A020|din=03:Fiat_TP_FL_7DA
-  - 7DA.22A021|din=03:Fiat_TP_FR_7DA
-  - 7DA.22A022|din=13:Fiat_TP_RL_7DA
-  - 7DA.22A023|din=03:Fiat_TP_RR_7DA
+  - 7DA.22A020
+  - 7DA.22A021
+  - 7DA.22A022
+  - 7DA.22A023
   "7E0":
-  - 7E0.7E8.2118:Fiat_ATF_T_V3
+  - 7E0.7E8.2118
   "7E1":
-  - 7E1.7E9.2118:Fiat_ATF_T_V2
+  - 7E1.7E9.2118
   - 7E1.7E9.2204FE:Fiat_ATF_T
   - 7E1.7E9.225503|fc=1:Fiat_GEAR
   - 7E1.7E9.225504|fc=1:Fiat_GEAR_TARGET
