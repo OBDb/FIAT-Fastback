@@ -1,14 +1,23 @@
 command_id: DA40.40.221004
 test_cases:
 - expected_values:
+    Fiat_BATT_V_BCM: 12.7
+  response: 18DAF140046210047F
+- expected_values:
     Fiat_BATT_V_BCM: 14
   response: 18DAF140046210048C
 - expected_values:
     Fiat_BATT_V_BCM: 14.2
   response: 18DAF140046210048E
 - expected_values:
+    Fiat_BATT_V_BCM: 14.5
+  response: 18DAF1400462100491
+- expected_values:
     Fiat_BATT_V_BCM: 14.6
   response: 18DAF1400462100492
 - expected_values:
     Fiat_BATT_V_BCM: 14.7
   response: 18DAF1400462100493
+- expected_values:
+    Fiat_BATT_V_BCM: 14.8
+  response: 18DAF1400462100494
