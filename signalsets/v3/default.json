@@ -1,4 +1,119 @@
 { "commands": [
-
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1002"}, "freq": 30, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_ENGINE_STATUS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Engine operational status"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1003"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_ECT_ECU", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1009"}, "freq": 3600, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_WATER_FUEL_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance with water in fuel warning"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "189B"}, "freq": 2, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_SWIRL_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "min": -100, "div": 100, "add": -327.68, "unit": "percent" }, "name": "Swirl actuator command"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "189F"}, "freq": 2, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_VGT_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Variable geometry turbo position commanded"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18A0"}, "freq": 2, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_VGT_ACT", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Variable geometry turbo position actual"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "fcm1": true, "din": "03", "cmd": {"22": "18A4"}, "freq": 3600, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_REGEN_STARTED_TOT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Particulate filter regeneration starts"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18A5"}, "freq": 60, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_REGEN_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Particulate filter regen interrupted count"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18AE"}, "freq": 3600, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_REGEN_CONSEC_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Consecutive interrupted particulate filter regeneration count"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18E8"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_DPF_FLOW_RES", "path": "Emissions", "fmt": { "len": 16, "max": 6.55, "div": 10000, "unit": "scalar" }, "name": "Particulate filter flow resistance"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18EC"}, "freq": 5, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_FORCED_REGEN", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Forced regen state"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18ED"}, "freq": 2, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_LAMBDA_DPF_DS", "path": "Emissions", "fmt": { "len": 16, "max": 25, "div": 512, "unit": "percent" }, "name": "Lambda downstream DPF O2 concentration"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "192D"}, "freq": 1, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_GEAR_ECU", "path": "Transmission", "fmt": { "len": 8, "max": 9, "unit": "scalar" }, "name": "Gear engaged"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "192F"}, "freq": 1,
+  "signals": [
+    {"id": "FASTBACK_AC_P", "path": "Engine", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "unknown" }, "name": "Air conditioning pressure"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "193A"}, "freq": 1,
+  "signals": [
+    {"id": "FASTBACK_TURBO_BOOST_ACTUATOR", "path": "Engine", "fmt": { "len": 8, "max": 99.22, "min": -100, "mul": 7813, "div": 10000, "sign": true, "unit": "percent" }, "name": "Turbo boost actuator duty"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1948"}, "freq": 1,
+  "signals": [
+    {"id": "FASTBACK_FUEL_RAMP_P_ADC", "path": "Fuel", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "millivolts" }, "name": "Fuel ramp pressure ADC"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "194F"}, "freq": 30, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_OIL_PUMP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Variable oil pump position"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1955"}, "freq": 30, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_BATT_V_ECU", "path": "Battery", "fmt": { "len": 16, "max": 20, "div": 2000, "unit": "volts" }, "name": "Battery voltage"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1959"}, "freq": 1,
+  "signals": [
+    {"id": "FASTBACK_TURBO_BOOST_CMD", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "unknown" }, "name": "Turbo boost, commanded"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "195B"}, "freq": 1,
+  "signals": [
+    {"id": "FASTBACK_TURBO_BOOST_ADC", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "millivolts" }, "name": "Turbo boost ADC"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "19BD"}, "freq": 1,
+  "signals": [
+    {"id": "FASTBACK_BAT_ST_CHG", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Battery state of charge"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2001"}, "freq": 30,
+  "signals": [
+    {"id": "FASTBACK_ODO_DA10", "path": "Trips", "fmt": { "len": 24, "max": 1677721, "div": 10, "unit": "kilometers" }, "name": "Odometer"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2005"}, "freq": 0.25,
+  "signals": [
+    {"id": "FASTBACK_MAX_RPM_REACHED", "path": "Movement", "fmt": { "len": 8, "max": 5080, "min": -5120, "mul": 40, "sign": true, "unit": "celsius" }, "name": "Max RPM reached"}
+  ]},
+{ "hdr": "DA18", "dbg": true, "cmd": {"22": "1D07"}, "freq": 1,
+  "signals": [
+    {"id": "FASTBACK_AT_OUTPUT_RPM", "path": "Transmission", "fmt": { "len": 8, "max": 6375, "mul": 25, "unit": "rpm" }, "name": "Transmission output speed"}
+  ]},
+{ "hdr": "DA18", "dbg": true, "cmd": {"22": "1D08"}, "freq": 1,
+  "signals": [
+    {"id": "FASTBACK_AT_INPUT_RPM", "path": "Transmission", "fmt": { "len": 8, "max": 6375, "mul": 25, "unit": "rpm" }, "name": "Transmission input speed"}
+  ]},
+{ "hdr": "DA18", "dbg": true, "cmd": {"22": "1D09"}, "freq": 1,
+  "signals": [
+    {"id": "FASTBACK_ATF_T", "path": "Transmission", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Automatic transmission temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "DA18", "dbg": true, "cmd": {"22": "1D12"}, "freq": 1,
+  "signals": [
+    {"id": "FASTBACK_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
+  ]},
+{ "hdr": "DA18", "rax": "18", "cmd": {"22": "2024"}, "freq": 86400, "dbgfilter": { "to": 2022, "years": [2024], "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_TIRE_SIZE", "path": "Tires", "fmt": {"bix": 64, "len": 16, "max": 65535, "unit": "millimeters" }, "name": "Tire size"}
+  ]},
+{ "hdr": "DA40", "rax": "40", "cmd": {"22": "1004"}, "freq": 30, "dbgfilter": { "to": 2024, "from": 2026 },
+  "signals": [
+    {"id": "FASTBACK_BATT_V_BCM", "path": "Battery", "fmt": { "len": 8, "max": 25, "div": 10, "unit": "volts" }, "name": "Battery voltage, BCM"}
+  ]}
 ]
 }
